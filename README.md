@@ -1,3 +1,4 @@
+
 # Fyrre Magazine
 
 **Fyrre Magazine** is a modern digital publication platform built with **Ruby on Rails** and **Inertia.js** +
@@ -13,12 +14,17 @@ backend content management system.
 ## 🧐 About the Project
 
 Fyrre Magazine is a web application that serves as a digital
-magazine.[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fgithub.com%2FNull-logic-0%2Ffyrre_magazine)] It allows for
+magazine. It allows for
 the publishing, management, and consumption of
-articles.[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fgithub.com%2FNull-logic-0%2Ffyrre_magazine)] The project
-leverages the power of Rails for the backend API and logic, while using Vite to bundle modern JavaScript and CSS assets
-for a responsive frontend
-experience.[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fgithub.com%2FNull-logic-0%2Ffyrre_magazine)]
+articles.
+
+
+
+https://github.com/user-attachments/assets/4131fa0d-1cf4-4b94-a5d5-30c2a5ad57d2
+
+
+
+
 
 ## 🛠 Tech Stack
 
