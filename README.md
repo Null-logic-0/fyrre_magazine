@@ -60,12 +60,34 @@ Before you begin, ensure you have the following installed on your machine:
    # or
    npm install
 
-4. **Database Setup**
+4. **ENV Setup**
+   Create .nev.development, .env.test, .env.production
+   ```bash
+   # env.test & env.development
+   
+   PG_PASSWORD=1919
+   
+   # env.production
+   
+   DATABASE_URL=posgresql://postgres.[your_db_production_url]
+   AWS_BUCKET_URL=https://your-bucket-name.s3.amazonaws.com
+
+5. **Rails Credentials Setup**
+   
+       EDITOR="code --wait" bin/rails credential:edit
+   ```bash
+   aws:
+     access_key_id: your-access-key-id
+     secret_access_key: your-secret_access_key
+     bucket: your-aws-bucket-name
+
+6. **Database Setup**
    Create and seed the database:
    ```bash
    bin/rails db:create
    bin/rails db:migrate
    bin/rails db:seed
+
 
 ## 💻 Development
 
