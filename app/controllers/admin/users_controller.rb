@@ -9,7 +9,7 @@ class Admin::UsersController < InertiaController
       query = params[:q].strip
       users_scope = users_scope.where(
         "name ILIKE :q OR email_address ILIKE :q",
-        q: "%#{query}%"
+        q: "%#{ActiveRecord::Base.sanitize_sql_like(query)}%"
       )
     end
     @pagy, @users = pagy(users_scope, items: 10)

@@ -6,7 +6,7 @@ class Admin::AdminPanelController < InertiaController
       query = params[:q].strip
       articles_scope = articles_scope.where(
         "title ILIKE :q OR excerpt ILIKE :q",
-        q: "%#{query}%"
+        q: "%#{ActiveRecord::Base.sanitize_sql_like(query)}%"
       )
     end
     @pagy, @articles = pagy(articles_scope, items: 10)
