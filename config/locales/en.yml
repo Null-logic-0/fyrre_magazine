@@ -1,0 +1,5 @@
+en:
+  errors:
+    image:
+      too_large: "Image must be less than %{count}MB"
+      invalid_format: "Image must be in png, jpg, or jpeg format"
