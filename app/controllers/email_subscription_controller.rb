@@ -1,4 +1,6 @@
 class EmailSubscriptionController < ApplicationController
+  allow_unauthenticated_access
+
   def create
     @email_subscription = EmailSubscription.new(email_params)
 
