@@ -42,7 +42,7 @@ export default function Index({articles}) {
 							</div>
 							{allLoaded && (
 								<div className="mt-8">
-									<Link href={"/Articles"}
+									<Link href={"/articles"}
 									      viewTransition
 									      className="text-xs font-bold uppercase flex items-center gap-2 hover:gap-4 transition-all">
 										See All Articles <BsArrowRight/>

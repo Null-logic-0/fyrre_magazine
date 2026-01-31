@@ -3,6 +3,7 @@ import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import RootLayout from "~/pages/public/root_layout.jsx";
 import Layout from "~/pages/admin/layout.jsx";
+import "./application.css"
 
 
 createInertiaApp({
@@ -18,7 +19,6 @@ createInertiaApp({
 	},
 
 	setup({el, App, props}) {
-		const auth = props.initialPage.props.auth || {};
 		createRoot(el).render(
 			<StrictMode>
 				<App {...props} />
