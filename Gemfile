@@ -67,4 +67,4 @@ gem "dotenv-rails", "~> 2.7"
 
 gem "aws-sdk", "~> 3"
 
-gem "pagy", "~> 43.2"
+gem "pagy", "~> 43.3"
